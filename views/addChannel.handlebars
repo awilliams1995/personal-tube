@@ -1,0 +1,112 @@
+
+
+	<div class="page-header header-filter" data-parallax="true" style="background-image: url('img/city.jpg');">
+	</div>
+
+	<div class="main main-raised">
+		<div class="profile-content">
+
+				<div class="space-70"></div>
+
+	    		<!--     *********   CARDS     *********      -->
+
+	    		<div class="cards">
+
+  <!-- Main Bootstrap Search -->
+  <div class="container">
+
+    <!-- Row for Searching New York Times -->
+    <div class="row">
+      <div class="col-sm-10 col-sm-offset-1">
+      	                
+						    <!-- Add Channel Button -->
+      	                <div class="col-xs-2 col-sm-offset-9 follow">
+	                   <button class="btn btn-fab btn-danger" rel="tooltip" title="Add A Channel">
+                            <i class="material-icons">add</i>
+                        </button>
+	                </div>
+	                <!-- End of Channel Button -->
+        <br>
+
+        <!-- Tabs with icons on Card -->
+							<div class="card card-nav-tabs">
+								<div class="header header-info">
+									<!-- colors: "header-primary", "header-info", "header-success", "header-warning", "header-danger" -->
+									<div class="nav-tabs-navigation">
+										<div class="nav-tabs-wrapper">
+											<ul class="nav nav-tabs" data-tabs="tabs">
+												<li>
+														<i class="material-icons">videocam</i>
+														Channel Parameters
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div> 
+        <!-- First panel is for handling the search parameters -->
+        
+          <div class="panel-body">
+            <!-- Here we create an HTML Form for handling the inputs-->
+            <form role="form">
+              <!-- Here we create the text box for capturing the search term-->
+              <div class="form-group">
+                <label for="search">Channel Name:</label>
+                <input type="text" class="form-control" id="search-term">
+              </div>
+
+              <!-- Here we capture the number of channels  -->
+              <div class="form-group">
+                <label for="pwd">Number of Search Results:</label>
+                <select class="form-control" id="num-records-select">
+							<option value="1">1</option>
+							<!-- Setting the option for 5 as default -->
+							<option value="5" selected>5</option>
+							<option value="10">10</option>
+						</select>
+              </div>
+              <!-- Here we capture the Start Year Parameter-->
+              <div class="form-group">
+                <label for="start-year">Stars (Optional):</label>
+                <input type="text" class="form-control" id="start-year">
+              </div>
+
+              <!-- Here we have our final submit button -->
+              <button type="submit" class="btn btn-info btn-default" id="run-search"><i class="fa fa-search"></i> Search</button>
+              <button type="button" class="btn btn-info btn-default" id="clear-all"><i class="fa fa-trash"></i> Clear Results</button>
+
+            </form>
+          </div>
+        
+      </div>
+    </div>
+
+    <!-- This row will handle all of the retrieved articles -->
+    <div class="row">
+      <div class="col-sm-12">
+        <br>
+
+        <!-- This panel will initially be made up of a panel and wells for each of the articles retrieved -->
+        <div class="panel panel-primary">
+
+          <!-- Panel Heading for the retrieved articles box -->
+          <div class="panel-heading">
+            <h3 class="panel-title"><strong><i class="fa fa-table"></i>   Channels</strong></h3>
+          </div>
+
+          <!-- This main panel will hold each of the resulting -->
+          <div class="panel-body" id="well-section">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+	    		<!--     *********    END CARDS      *********      -->
+
+
+	<!--   Core JS Files   -->
+
+
+	
+	  <!-- Code to the JavaScript File -->
+</html>
